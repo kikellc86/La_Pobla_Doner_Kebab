@@ -284,4 +284,46 @@ footer {
   h3 {
     page-break-after: avoid;
   }
+
+  /*
+   *Drinks section 
+   */
+
+   #menu-bebidas {
+  background-color: #fff8f0;
+  border-top: 3px solid #e67e22;
+  padding: 20px;
+  margin-top: 30px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#menu-bebidas h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #c0392b;
+}
+
+#menu-bebidas .categoria {
+  margin-bottom: 25px;
+}
+
+#menu-bebidas h3 {
+  font-size: 22px;
+  color: #d35400;
+  margin-bottom: 8px;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 5px;
+}
+
+#menu-bebidas ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#menu-bebidas li {
+  padding: 4px 0;
+  font-size: 16px;
+  border-bottom: 1px dotted #ddd;
+}
 }
