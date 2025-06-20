@@ -1,9 +1,7 @@
 /*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
 
-/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-
 /* ==========================================================================
-   Base styles: opinionated defaults
+   Base styles
    ========================================================================== */
 
 html {
@@ -14,11 +12,10 @@ html {
 
 body {
   background-color: #000;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
 }
-
-/*
- * Remove text-shadow in selection highlight:
- */
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -30,10 +27,6 @@ body {
   text-shadow: none;
 }
 
-/*
- * A better looking default horizontal rule
- */
-
 hr {
   display: block;
   height: 1px;
@@ -42,11 +35,6 @@ hr {
   margin: 1em 0;
   padding: 0;
 }
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- */
 
 audio,
 canvas,
@@ -57,26 +45,18 @@ video {
   vertical-align: middle;
 }
 
-/*
- * Remove default fieldset styles.
- */
-
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
 textarea {
   resize: vertical;
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Layout styles
    ========================================================================== */
 
 header, footer {
@@ -84,14 +64,14 @@ header, footer {
   color: #fff;
 }
 
-main {
-  padding: 1.5em 1em;
-}
-
 header {
   font-size: 2em;
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+main {
+  padding: 1.5em 1em;
 }
 
 footer {
@@ -101,30 +81,46 @@ footer {
 }
 
 /* ==========================================================================
-   Menú de Bebidas
+   Carta Comida (imagen)
+   ========================================================================== */
+
+.menu-comida {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.menu-comida img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* ==========================================================================
+   Carta Bebidas
    ========================================================================== */
 
 #menu-bebidas {
   background-color: transparent;
-  padding: 20px 10px;
-  margin-top: 30px;
-  font-family: 'Segoe UI', sans-serif;
-  color: #fff;
+  padding: 40px 20px;
+  margin: 0 auto;
+  max-width: 900px;
   text-align: center;
+  box-sizing: border-box;
 }
 
 #menu-bebidas h2 {
-  font-size: 2em;
+  font-size: 2.2em;
   margin-bottom: 1em;
   color: #f39c12;
 }
 
 #menu-bebidas .categoria {
-  margin-bottom: 2em;
+  margin-bottom: 2.5em;
 }
 
 #menu-bebidas h3 {
-  font-size: 1.4em;
+  font-size: 1.5em;
   color: #e67e22;
   margin-bottom: 0.5em;
   border-bottom: 1px dashed #666;
@@ -134,16 +130,19 @@ footer {
 #menu-bebidas ul {
   list-style: none;
   padding-left: 0;
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: left;
 }
 
 #menu-bebidas li {
-  padding: 4px 0;
+  padding: 6px 0;
   font-size: 1.1em;
   border-bottom: 1px dotted #555;
 }
 
 /* ==========================================================================
-   Helper classes
+   Helpers
    ========================================================================== */
 
 .hidden,
@@ -189,19 +188,8 @@ footer {
 }
 
 /* ==========================================================================
-   Responsive Design
+   Responsive
    ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Viewport-specific styles */
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* High resolution device styles */
-}
 
 @media (max-width: 600px) {
   header {
@@ -209,13 +197,31 @@ footer {
     margin-top: 0.7em;
     margin-bottom: 0.7em;
   }
+
   main {
     padding: 1em 0.3em;
   }
+
   footer {
     font-size: 1em;
     margin-top: 1.2em;
     margin-bottom: 0.7em;
+  }
+
+  #menu-bebidas {
+    padding: 20px 10px;
+  }
+
+  #menu-bebidas h2 {
+    font-size: 1.6em;
+  }
+
+  #menu-bebidas h3 {
+    font-size: 1.2em;
+  }
+
+  #menu-bebidas li {
+    font-size: 1em;
   }
 }
 
